@@ -1,0 +1,35 @@
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &__icon {
+    position: absolute;
+    top: 20%;
+    color: $brandTxtColor;
+    opacity: 0;
+    background-color: $whiteColor;
+    transition-property: opacity color background-color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: ease-in-out;
+  }
+  &__input {
+    &:checked {
+      + {
+        .custom-checkbox__icon {
+          opacity: 1;
+          color: $whiteColor;
+          background-color: $hoverColor;
+        }
+      }
+    }
+    appearance: none;
+    background: $whiteColor;
+    margin: 0px;
+    border: 2px solid $brandTxtColor;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    margin-right: 8px;
+  }
+  
+}

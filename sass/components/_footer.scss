@@ -1,0 +1,166 @@
+.footer {
+  background-color: $backgroundScdColor;
+
+  &__box {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+  }
+  &__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 700;
+    color: $hoverColor;
+    letter-spacing: 0.03em;
+    line-height: 31px;
+    text-decoration: none;
+    margin-right: 94px;
+  }
+  &__logo-2 {
+    color: $whiteColor;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+  }
+  &__list {
+    list-style-type: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 20px;
+  }
+  &__adress {
+    color: $whiteColor;
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  &__social {
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+    display: block;
+    padding-top: 12px;
+  }
+  &__icon-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    list-style-type: none;
+  }
+  &__social-icon {
+    color: $whiteColor;
+    background-color: $iconFooterBg;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 12px;
+    transition-property: background-color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTimingfunction;
+    &:hover {
+      background-color: $hoverColor;
+    }
+    &:focus {
+      background-color: $hoverColor;
+    }
+  }
+}
+
+.newsletter {
+  position: relative;
+  width: 570px;
+
+  &__label {
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+    margin-bottom: 20px;
+  }
+  &__box {
+    position: absolute;
+    top: 36px;
+    display: flex;
+    gap: 12px;
+  }
+  &__input {
+    color: $whiteColor;
+    width: 358px;
+    height: 50px;
+    padding: 15px 0px 15px 16px;
+    background-color: $backgroundScdColor;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow $boxShadowDeflaut;
+    border-radius: $borderRadiusDeflaut;
+    outline: none;
+    transition-property: border;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTimingfunction;
+    &:hover {
+      border: 1px solid $hoverColor;
+    }
+    &:focus {
+      border: 1px solid $hoverColor;
+    }
+    &::placeholder {
+      font-family: $fontFamilyMain;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: $iconFooterBg;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    padding: 10px 0px 10px;
+    width: 200px;
+    height: 50px;
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    background-color: $hoverColor;
+    color: $whiteColor;
+    box-shadow: $boxShadowDeflaut;
+    border-radius: $borderRadiusDeflaut;
+    border: none;
+  }
+}
+.hidden-input {
+  appearance: none;
+  outline: none;
+}

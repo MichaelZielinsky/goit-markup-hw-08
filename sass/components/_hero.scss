@@ -1,0 +1,53 @@
+.hero {
+  background-color: $backgroundScdColor;
+  padding: 200px 0px;
+  background-image: linear-gradient(
+      to bottom,
+      $gradientHeroColor,
+      $gradientHeroColor
+    ),
+    url("../images/hero-banner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__txt {
+    color: $whiteColor;
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1.36;
+    font-size: 44px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 0px 237px;
+  }
+
+  &__btn {
+    background-color: $hoverColor;
+    color: $whiteColor;
+    font-family: $fontFamilyMain;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: $boxShadowDeflaut;
+    border-radius: $borderRadiusDeflaut;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 41px 10px 42px;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,37 @@
+.contact-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-link {
+  font-size: 14px;
+  color: $brandDeflautColor;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  line-height: 16px;
+  font-family: &fontFamilyMain;
+  font-style: normal;
+  font-weight: 500;
+  transition-property: color;
+  transition-duration: $transitionDuration;
+  transition-timing-function: $transitionTimingfunction;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:hover {
+    color: $hoverColor;
+    cursor: pointer;
+  }
+  &:active {
+    color: $hoverColor;
+    cursor: pointer;
+  }
+  &:focus {
+    color: $hoverColor;
+    cursor: pointer;
+  }
+  &:first-of-type {
+    margin-right: 50px;
+  }
+}

@@ -1,0 +1,32 @@
+.clients {
+  background-color: $whiteColor;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+    list-style-type: none;
+  }
+  &__box {
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconFirstColor;
+    border-radius: $borderRadiusDeflaut;
+    color: $iconFirstColor;
+    display: block;
+    justify-content: center;
+    padding: 16px 32px;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTimingfunction;
+    &:hover {
+      border: 1px solid $hoverColor;
+      color: $hoverColor;
+    }
+    &:focus {
+      border: 1px solid $hoverColor;
+      color: $hoverColor;
+    }
+  }
+}

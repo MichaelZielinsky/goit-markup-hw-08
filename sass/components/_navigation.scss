@@ -1,0 +1,38 @@
+.main-nav {
+  font-family: $fontFamilyMain;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+
+  &__item {
+    display: inline-block;
+    text-decoration: none;
+    &:first-of-type {
+      margin-right: 46px;
+    }
+    &:last-of-type {
+      margin-left: 46px;
+    }
+  }
+
+  &__link--visited {
+    position: relative;
+    color: $hoverColor;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 44px;
+      display: block;
+      width: 53px;
+      height: 4px;
+      background: $hoverColor;
+      border-radius: 2px;
+    }
+  }
+}
