@@ -8,6 +8,7 @@
     align-content: center;
     margin-top: 30px;
     gap: 30px;
+    
   }
 
   &__card {
@@ -83,4 +84,20 @@
       padding: 12px;
     }
   }
+}
+
+
+// --------------- TABLET ---------------
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .team__list {
+    flex-wrap:wrap;
+    justify-content: space-between;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+// --------------- DESKTOP ---------------
+
+@media screen and (min-width: $breakpointDesktopStart) {
 }

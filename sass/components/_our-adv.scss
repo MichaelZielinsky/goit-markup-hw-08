@@ -52,9 +52,18 @@
 // --------------- TABLET ---------------
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .our-adv__title {
+    text-align: left;
+    flex-direction: column;
+  }
 
+  .our-adv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
-
 // --------------- DESKTOP ---------------
 
-@media screen and (min-width: $breakpointDesktopStart) {}
+@media screen and (min-width: $breakpointDesktopStart) {
+}

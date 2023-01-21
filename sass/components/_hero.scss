@@ -1,7 +1,7 @@
 .hero {
   background-color: $backgroundScdColor;
   height: 400px;
-  padding:118px 0px;
+  padding: 118px 0px;
   background-image: linear-gradient(
       to bottom,
       $gradientHeroColor,
@@ -29,7 +29,6 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     text-align: center;
-
   }
 
   &__btn {
@@ -81,9 +80,12 @@
 // --------------- TABLET ---------------
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
-
+  .hero__flex {
+    padding: 0px 200px;
+  }
 }
 
 // --------------- DESKTOP ---------------
 
-@media screen and (min-width: $breakpointDesktopStart) {}
+@media screen and (min-width: $breakpointDesktopStart) {
+}

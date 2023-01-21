@@ -14,9 +14,7 @@
     padding: 16px 0px;
   }
   &__logo {
-    
     color: $hoverColor;
-
   }
   &__logo--black {
     color: $logoBlack;
@@ -26,7 +24,9 @@
 // --------------- TABLET ---------------
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
-
+  .header__logo--black {
+    margin-right: 83px;
+  }
 }
 
 // --------------- DESKTOP ---------------
