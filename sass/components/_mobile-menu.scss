@@ -40,15 +40,15 @@
   }
 
   &__icon {
-    fill: $brandTxtColor;
+    color: $brandTxtColor;
     cursor: pointer;
-    transition-property: fill;
+    transition-property: color;
     transition-duration: $transitionDuration;
     transition-timing-function: $transitionTimingfunction;
   }
 
   &__icon:hover {
-    fill: $hoverColor;
+    color: $hoverColor;
   }
 
   &__icon--close {

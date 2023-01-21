@@ -1,9 +1,23 @@
 .what-we-do {
-  display: flex;
+  font-family: $fontFamilyMain;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $whiteColor;
+    text-align: center;
+  display: none;
   gap: 30px;
   margin-top: 50px;
   padding-bottom: 94px;
   list-style: none;
+
+  &__title {
+    display: none;
+  }
 
   &__item {
     position: relative;
@@ -17,17 +31,16 @@
     background: $overlayBg;
     padding: 27px 90px;
   }
+}
 
-  &__overlay-txt {
-    font-family: $fontFamilyMain;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $whiteColor;
-    text-align: center;
+// --------------- DESKTOP ---------------
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .what-we-do {
+    display: flex;
+
+    &__title {
+      display: block;
+    }
   }
 }

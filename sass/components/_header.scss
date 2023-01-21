@@ -1,4 +1,5 @@
 .header {
+  font-family: "Raleway";
   border-bottom: px solid $borderColor;
   font-style: normal;
   font-size: 26px;
@@ -10,15 +11,32 @@
   &__logo-box {
     display: flex;
     align-items: center;
-    padding: 24px 0px;
+    padding: 16px 0px;
   }
   &__logo {
-    font-family: "Raleway";
+    
     color: $hoverColor;
-    margin-right: 94px;
+
   }
   &__logo--black {
     color: $logoBlack;
-    margin-right: 0;
+  }
+}
+
+// --------------- TABLET ---------------
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+
+}
+
+// --------------- DESKTOP ---------------
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .header__logo-box {
+    padding: 24px 0px;
+  }
+
+  .header__logo {
+    margin-right: 94px;
   }
 }
