@@ -92,7 +92,6 @@
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
   .team__list {
     flex-wrap:wrap;
-    justify-content: space-between;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
