@@ -88,4 +88,14 @@
 // --------------- DESKTOP ---------------
 
 @media screen and (min-width: $breakpointDesktopStart) {
+  .hero {
+    height: 600px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__txt {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }

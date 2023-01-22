@@ -32,11 +32,12 @@
 // --------------- DESKTOP ---------------
 
 @media screen and (min-width: $breakpointDesktopStart) {
+
   .header__logo-box {
     padding: 24px 0px;
   }
 
-  .header__logo {
+  .header__logo--black {
     margin-right: 94px;
   }
 }

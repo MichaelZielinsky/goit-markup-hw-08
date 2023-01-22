@@ -56,7 +56,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $whiteColor;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-top: 12px;
   }
   &__icon-list {
@@ -190,4 +191,44 @@
 .hidden-input {
   appearance: none;
   outline: none;
+}
+
+// --------------- TABLET ---------------
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .footer__box {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .footer__social {
+    margin-bottom: 50px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: $breakpointDesktopStart) {
+  .footer__box {
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .footer__list {
+    min-width: 246px;
+  }
+  .footer__social {
+    padding-top: 12px;
+  }
+  .newsletter {
+    padding-top: 12px;
+  }
+  .newsletter__box {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .newsletter__input {
+    width: 358px;
+  }
 }

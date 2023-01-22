@@ -2,17 +2,15 @@
   background-color: $whiteColor;
   padding: 60px 15px;
 
+  &__card {
+    display: flex;
+  }
+
   &__list {
     gap: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  &__card {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
   }
 
   &__icon {
@@ -52,12 +50,34 @@
 // --------------- TABLET ---------------
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .our-adv__title {
+    text-align: left;
+  }
+
   .our-adv__list {
-    flex-basis: calc((100% - 30px) / 2);
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
   }
+ .our-adv__card {
+  flex-basis: calc((100% - 30px) / 2);
+ }
 }
+
 // --------------- DESKTOP ---------------
 
 @media screen and (min-width: $breakpointDesktopStart) {
+
+  .our-adv {
+    padding: 94px 15px;
+  }
+
+  .our-adv__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .our-adv__title {
+    text-align: left;
+  }
 }

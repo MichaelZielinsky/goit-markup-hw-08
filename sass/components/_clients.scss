@@ -10,6 +10,11 @@
     gap: 30px;
     list-style-type: none;
   }
+
+  &__list-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
   &__box {
     width: 100%;
     height: auto;
@@ -19,7 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc((100% - 30px) / 2);
     padding: 16px 50px;
     transition-property: color;
     transition-duration: $transitionDuration;
@@ -35,4 +39,21 @@
   }
 }
 
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+  .clients__list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
+@media screen and (min-width: $breakpointDesktopStart) {
+  .clients {
+    padding: 94px;
+  }
+  .clients__list {
+    flex-wrap: nowrap;
+  }
+
+  .clients__box {
+    padding: 16px 32px;
+  }
+}
