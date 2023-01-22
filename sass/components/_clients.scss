@@ -4,7 +4,7 @@
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
     gap: 20px;
@@ -51,9 +51,6 @@
   }
   .clients__list {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
-
-  // .clients__box {
-  //   padding: 16px 32px;
-  // }
 }
